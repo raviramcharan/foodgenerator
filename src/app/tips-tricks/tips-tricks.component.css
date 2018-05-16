@@ -1,0 +1,17 @@
+.tipstop{
+	margin-top: 80px;
+}
+.tipstricks{
+	border: 1px solid lightgray;
+}
+
+.card-body {
+	text-decoration: none;
+	color: #000;
+}
+
+.card-body:hover {
+	text-decoration: underline;
+
+
+}

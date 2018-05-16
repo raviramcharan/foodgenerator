@@ -1,0 +1,47 @@
+<div *ngIf="recipe" class="container detail_blok">
+	<a href="#" role="button" class="btn btn-primary back">Terug naar het overzicht</a>
+	<div class="row blok_top">
+		<div class="col-md-5 afbeelding">
+			<img class="detail_img" src="{{recipe.receptafbeelding}}">
+		</div>
+		<div class="col-md-7 recept_info">
+			<h1 class="detail-recipe-name">{{ recipe.name }}</h1>
+			<span>
+		    	<span class="info-item"><i class="fas fa-signal"></i></span>
+		    	{{recipe.moeilijkheidsgraad}}
+		    </span><br>
+	 		<span>
+	 			<span class="info-item"><i class="far fa-clock"></i></span>
+	 			{{recipe.bereidingstijd}}
+			 </span><br>
+			 <span>
+				<span class="info-item"><i class="fas fa-utensils"></i></span>
+				{{recipe.soort}}
+			</span>
+		</div>
+	</div>
+	<div class="row blok_bottom">
+		<div class="col-md-5 ingredient">
+			 <button class="plusminus" (click)="decrement()">-</button>
+		    {{counter}} personen 
+		    <button class="plusminus" (click)="increment()">+</button>
+		    <div></div>
+			<div *ngIf="recipe.hoeveelheden[0] !== NaN">{{recipe.hoeveelheden[0]*counter}} {{recipe.ingredienten[0]}}</div>
+			<div *ngIf="recipe.hoeveelheden[1] !== NaN">{{recipe.hoeveelheden[1] *counter}} 
+			{{recipe.ingredienten[1]}}</div>
+			<div *ngIf="recipe.hoeveelheden[2] !== NaN">{{recipe.hoeveelheden[2]*counter}} {{recipe.ingredienten[2]}}</div>
+			<div *ngIf="recipe.hoeveelheden[3] !== NaN">{{recipe.hoeveelheden[3]*counter}} {{recipe.ingredienten[3]}}</div>
+			<div *ngIf="recipe.hoeveelheden[4] !== NaN">{{recipe.hoeveelheden[4]*counter}} {{recipe.ingredienten[4]}}</div>
+			<div *ngIf="recipe.hoeveelheden[5] !== NaN">{{recipe.hoeveelheden[5]*counter}} {{recipe.ingredienten[5]}}</div>
+			<div *ngIf="recipe.hoeveelheden[6] !== NaN">{{recipe.hoeveelheden[6]*counter}} {{recipe.ingredienten[6]}}</div>
+			<div *ngIf="recipe.hoeveelheden[7] !== NaN">{{recipe.hoeveelheden[7]*counter}} {{recipe.ingredienten[7]}}</div>
+		</div>
+		<div class="col-md-7 bereiding">
+			{{recipe.bereidingswijze}}
+		</div>
+	</div>
+</div>
+
+
+
+	

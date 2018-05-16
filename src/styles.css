@@ -1,0 +1,42 @@
+/* You can add global styles to this file, and also import other style files */
+/* Application-wide Styles */
+@import './styles/font-awesome/css/font-awesome.min.css';
+@import './styles/bootstrap-4.1.0-dist/css/bootstrap.min.css';
+
+
+/* html,
+body,
+header,
+#intro {
+  height: 80%;
+}
+
+#intro {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/7/70/Platt_brunch.jpg")no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+} */
+
+.navbartitle  {
+font-style: italic;
+font-weight: bold;
+font-size: 30px;
+}
+
+.modal-backdrop {
+  display: none;
+}
+
+.loginbutton  {
+  border-color: #21d192;
+  color: #21d192;
+}
+
+.loginbutton:hover  {
+  border-color: #21d192;
+  background-color: #21d192;
+}
+

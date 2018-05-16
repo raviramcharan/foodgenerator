@@ -1,0 +1,174 @@
+@import '../../styles/font-awesome/css/font-awesome.min.css';
+@import '../../styles/bootstrap-4.1.0-dist/css/bootstrap.min.css';
+
+.card {
+	border: none;
+	margin: 0 0 20px 0;
+	padding: 0 15px;
+}
+
+.card-body {
+	padding-left: 0;
+}
+
+a.card {
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover.card {
+	text-decoration: none;
+	border: 1px solid #D3D3D3;
+	padding: 0 14px;
+}
+
+
+/* .recipe_name {
+
+} */
+
+.recipe_img {
+	width: 100%;
+}
+
+.card {
+	border: none;
+	margin: 0 0 20px 0;
+	padding: 0 15px;
+}
+
+.card-body {
+	padding-left: 0;
+}
+
+a.card {
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover.card {
+	text-decoration: none;
+	border: 1px solid #D3D3D3;
+	padding: 0 14px;
+}
+
+html,
+head,
+body,
+#intro {
+	min-height: 500px;
+  }
+  
+#intro {
+    background: url("https://upload.wikimedia.org/wikipedia/commons/7/70/Platt_brunch.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  
+  }
+
+.container	{
+	/* position: relative; */
+	/* top: 50px; */
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	#intro {
+		height: 80%;
+	}
+
+	.receptafbeelding {
+		 color: #fff;
+	}
+
+	.receptblok {
+		 color: #000;
+	}
+}
+
+.headerText	{
+	color: white;
+	/* transform: translate(-50%, -50%); */
+	font-size: 75px;
+	width: 100%;
+	text-align: center;
+	padding-top: 170px;
+	text-shadow: 2px 2px 8px #000;
+}
+
+.underText	{
+	color: white;
+	/* transform: translate(-50%, -50%); */
+	font-size: 35px;
+	width: 100%;
+	text-align: center;
+	padding-top: 2px;
+	text-shadow: 2px 2px 8px #000;
+}
+.form-inline	{
+	/* transform: translate(-50%, -50%); */
+	width: 100%;
+
+}
+
+.form-control	{
+	width: 100%;
+    margin-right: 0 !important;
+}
+
+.zoekBalk 	{
+	width: 100% !important;
+	margin-top:15px;
+}
+
+
+.filterbalk	{
+	min-height: 50px;
+
+}
+
+.randomizecol	{
+	margin-top: 30px;
+	width: 100%;
+}
+
+.randomize	{
+	width: 100%;
+	color: white !important;
+	border-color:  #21d192;
+	background-color: #21d192;
+}
+
+.randomize:hover	{
+	background-color: #1a9167;
+	border-color:  #1a9167;
+}
+
+.recipies_component {
+	padding-top: 20px;
+}
+
+.like-button-empty {
+	position: absolute;
+    top: 5px;
+    right: 25px;
+    z-index: 10;
+    font-size: 25px;
+}
+.like-button-fill {
+	position: absolute;
+    top: 5px;
+    right: 25px;
+    z-index: 10;
+    display: none;
+    font-size: 25px;
+}
+
+.like-button-link {
+	color: #21d192;
+}
+
+.like-button-link:hover {
+	color: #f44280;
+}

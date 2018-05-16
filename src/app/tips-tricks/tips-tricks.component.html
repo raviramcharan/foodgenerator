@@ -1,0 +1,18 @@
+<div class="container">
+	<a routerLink="../tipstricks-detail/{{tips.id}}" class="tipstricks tipstop row" *ngFor="let tips of tipstricks">
+		<div class="col-md-4">
+			<img class="card-img-top" src="{{tips.afbeelding}}">
+		</div>
+
+	  	<div class="card-body col-md-8">
+		    <h5 class="card-title">{{tips.name}}</h5>
+		    <p class="card-text">
+		    	<span>
+		 			{{tips.info}}
+				 </span><br>
+		    </p>
+	  	</div>
+	</a>
+</div>	
+
+

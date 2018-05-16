@@ -1,0 +1,122 @@
+<div id="search-component">
+		<div id="intro" class="view">
+			<div class="full-bg-img hm-black-strong container">
+				<h1 class="headerText">Foodgenerator</h1>
+				<h1 class="underText">Waar heeft u vandaag trek in?</h1>
+				<div class="row">
+					<div class="col-md-3"></div>
+					<div class="col-md-6">
+						<form class="form-inline my-2 my-lg-0">
+							<input #searchBox id="search-box" class="form-control mr-sm-2 zoekBalk" type="search" placeholder="Search" aria-label="Search" (keyup)="search(searchBox.value)" />
+							<!-- <input class="form-control mr-sm-2 zoekBalk" type="search" placeholder="Search" aria-label="Search"> -->
+							<!-- <button class="btn btn-outline-success  my-2 my-sm-0" type="submit">Search</button> -->
+						</form>
+					</div>
+					<div class="col-md-3"></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class=col-md-4></div>
+					<div class="col-md-4 randomizecol">
+						<a class="btn btn-info randomize" onClick="randomlinks()" role="button">Kies een gerecht voor mij uit.</a>
+					</div>
+				<div class="col-md-4"></div>
+			</div>
+		</div>
+	</div>
+
+	
+	  <!-- <input #searchBox id="search-box" (keyup)="search(searchBox.value)" /> -->
+	
+	<div class="container recipies_component">
+		<h2>Recepten</h2><br/>
+		<div class="filteropties row">
+			<h5 class="col-md-6">Soort gerecht: </h5>
+			<h5 class="col-md-3">Moeilijkheidsgraad: </h5>
+			<h5 class="col-md-3">Bereidingstijd: </h5>
+		</div>
+	
+		<div class="filterbalk row">
+			<h6 class="col-md-3">
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" value="" id="ontbijtCheck">
+				<label class="form-check-label" for="ontbijtCheck">
+				  Ontbijt
+				</label>
+			</div>
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" value="" id="lunchCheck">
+				<label class="form-check-label" for="lunchCheck">
+				  Lunch
+				</label>
+			</div>
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" value="" id="dinerCheck">
+				<label class="form-check-label" for="dinerCheck">
+					Diner
+				</label>
+			</div></h6>
+			<h6 class="col-md-3">
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="" id="dessertCheck">
+					<label class="form-check-label" for="dessertCheck">
+					  Dessert
+					</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="" id="tussendoorCheck">
+					<label class="form-check-label" for="tussendoorCheck">
+					  Tussendoor
+					</label>
+				</div>
+			</h6>
+			<h6 class="col-md-3">
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="" id="makkelijkCheck">
+					<label class="form-check-label" for="makkelijkCheck">
+					  Makkelijk
+					</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="" id="gemiddeldCheck">
+					<label class="form-check-label" for="gemiddeldCheck">
+					Gemiddeld
+					</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="" id="moeilijkCheck">
+					<label class="form-check-label" for="moeilijkCheck">
+					Moeilijk
+					</label>
+				</div>
+			</h6>
+			<h6 class="col-md-3">Filters: </h6>
+		</div><br/>
+	
+		<div class="recipies row">
+			<a routerLink="../recipe-detail/{{recipe.id}}" *ngFor="let recipe of recipies" class="card col-md-4" >
+				  <img class="card-img-top" src="{{recipe.receptafbeelding}}">
+				  <a href="" class="like-button-link">
+						<i class="far fa-heart like-button-empty"></i>
+						<i class="fas fa-heart like-button-fill"></i>
+					</a>
+				  <div class="card-body">
+					<h5 class="card-title">{{recipe.name}}</h5>
+					<p class="card-text">
+						<span>
+							<i class="fas fa-signal"></i>
+							{{recipe.moeilijkheidsgraad}}
+						</span><br>
+						 <span>
+							 <i class="far fa-clock"></i>
+							 {{recipe.bereidingstijd}}
+						</span><br>
+						<span>
+							<i class="fas fa-utensils"></i>
+							{{recipe.soort}}
+						</span>
+					</p>
+				  </div>
+			</a>
+		</div>
+	</div>

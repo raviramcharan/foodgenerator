@@ -1,0 +1,64 @@
+.detail-recipe-name {
+	/*text-align: center;*/
+	margin-bottom: 20px;
+	border-bottom: 2px solid #21d192;
+}
+
+.detail_img {
+	width: 350px;
+}
+
+.afbeelding {
+	padding-left: 0;
+}
+
+.recept_info {
+
+}
+
+.ingredient {
+	padding-left: 0;
+}
+
+.bereiding {
+	
+}
+
+.blok_top {
+	margin: 20px 0 30px 0;
+}
+
+.blok_bottom {
+	margin: 20px 0 30px 0;
+	border-top: 1px solid lightgrey;
+	padding-top: 20px;
+}
+
+.info-item {
+	width: 10px;
+}
+
+.detail_blok {
+	margin-top: 80px;
+}
+
+.breadcrumb	{
+	position: relative;
+	top: 60px;
+}
+
+a.back {
+	background-color: #21d192;
+    border-color: #21d192;
+}
+
+.plusminus {
+	border-radius: 5px;
+	border-color: #21d192;
+}
+
+.plusminus:focus {
+	outline: none;
+}
+
+
